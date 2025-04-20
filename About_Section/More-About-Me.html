@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Cardo&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/ProjectList.css">
+  <link rel="stylesheet" href="../css/MediaQueries.css">
+  <title>More About Me</title>
+</head>
+<body>
+
+  <div class="container py-5">
+    <h2 style="color: #2D2D2D;">Welcome to My Profile!</h2>
+    <p style="color: #5d624c;">Just tap it.</p>
+  
+      <!-- List of Projects -->
+      <div class="accordion" id="projectsAccordion">
+        
+        <!-- Project 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Curriculum Vitae
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              <p>Committed to delivering quality work with integrity and dedication</p>
+              <div class="d-flex gap-4">
+                <a href="CurriculumVitae.html" class="text-success"><i class="bi bi-image-fill"></i> Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Project 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Certificates and What Drives Me.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              <p>Chasing growth, one certificates at at time</p>
+              <div class="d-flex gap-4">
+                <a href="Certificates.html" class="text-success"><i class="bi bi-image-fill"></i> Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Back Button -->
+  <div class="text-center">
+    <a href="../main.html#aboutme" class="diagonal-btn swipeBtn"><span>← Go to Home</span></a>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../jscript/script.js"></script>
+</body>
+</html>

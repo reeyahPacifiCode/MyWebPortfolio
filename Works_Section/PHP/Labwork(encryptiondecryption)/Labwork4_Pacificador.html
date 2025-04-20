@@ -1,0 +1,119 @@
+<html>
+    <head> 
+        <style>
+        
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: left;
+            font-size: 20px;
+        }
+        h3{
+            margin: 5px; 
+            text-align: left;
+            font-size: 18px;
+        }
+        p {
+            margin: 5px; 
+            font-size: 14px;
+            padding: 15px; 
+            border: 2px solid #0d430f; 
+            border-radius: 50px; 
+            line-height: 1.2; 
+            width: 390px;
+
+        }
+        
+        label {
+            margin: 5px; 
+            padding: 6px; 
+            border: 2px solid #0d430f; 
+            border-radius: 7px; 
+            line-height: 2.4; 
+            width: 500px;
+            font-size: 15px;
+        }
+        
+        input[type="text"] {
+        width: 300px; 
+        height: 25px; 
+        padding: 15px; 
+        border: 2px solid #0d430f; 
+        border-radius: 50px; 
+        font-size: 14px; 
+        color: #333; 
+        background-color: white; 
+        }
+        
+        input[type="submit"] {
+        margin: 5px;
+        padding: 10px 5px;
+        background-color: #718973; 
+        color: white; 
+        border: none;
+        border-radius: 50px;
+        font-size: 13px;
+        cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+        background-color: #b0c9b1; /* Darkens button on hover */
+        }
+        
+        button{
+        margin: 5px; 
+        padding: 15px 10px;
+        background-color: #718973;
+        color: white; 
+        border: none;
+        border-radius: 50px;
+        font-size: 10px;
+        cursor: pointer;   
+        }
+
+        button:hover {
+            background-color: #b0c9b1; /* Darkens button on hover */  
+        }
+        </style>
+
+        <title>CRYPTOGRAPHY TASK</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.js"></script>    
+    </head>
+    <body>
+        <h1>ENCRYPTION AND DECRYPTION PROCESS</h1>
+        <h2>RHEA MAE I. PACIFICADOR</h2>
+        <h2>BSIT 3A</h2>
+        <form id="cryptoForm">
+            <label for="inputText">Text to Encrypt:</label>
+            <input type="text" id="inputText" required>
+            <br>
+            <label for="encryptionKey">Encryption Key:</label>
+            <input type="text" id="encryptionKey" required>
+            <br>
+            <input type="submit" value="Encrypt">
+        </form>
+    
+        <div>
+            <h3>Encrypted Text:</h3>
+            <p id="encryptedText"></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <form id="decryptoForm">
+            <label for="decryptionKey">Decryption Key:</label>
+            <input type="text" id="decryptionKey" required>
+            <br>
+            <input type="submit" value="Decrypt">
+        </form>
+        <div>
+            <h3>Decrypted Text:</h3>
+            <p id="decryptedText"></p>
+        </div>
+        <br>
+        <button id="clearButton">Clear</button>
+
+        <script src="tago.js"></script>
+    </body>
+</html>

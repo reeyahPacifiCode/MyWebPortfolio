@@ -1,0 +1,139 @@
+/*MEDIA QUERIES--RESPONSIVE*/
+
+
+/*Projectlist*/
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 2rem 3rem;
+  }
+
+
+  
+/*main*/
+@media (max-width: 768px) {
+  /*-------------NAVBAR-----------------------*/
+    .navbar-nav {
+      text-align: center; 
+    }
+    .navbar-wrapper {
+      padding: 10px;
+    }
+    .nav.navbar {
+      border-radius: 20px;
+      width: 100%;
+      margin: 0 10px;
+    }
+    .navbar-nav {
+      text-align: center;
+    }
+
+
+  /*-------------ABOUT ME---------------------*/
+    .bio-img {
+      margin-top: 20px;
+  }
+
+
+  /*-------------WORKS--------------*/
+  .service-card {
+    margin-bottom: 20px;
+  }
+  .service-card .card-img-top {
+    max-height: 140px;
+  }
+  .carousel-item .col-md-3,
+  .carousel-item .col-md-4 {
+    flex: 0 0 90%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .works {
+    padding: 40px 10px;
+  }
+  
+  .carousel-indicators {
+    margin-top: 10px;
+  }
+}
+
+/*-------------ASSESMENTS--------------------*/
+  .container {
+    padding: 10px 15px 60px;
+  }
+
+  .dual-pane {
+    flex-direction: column;
+  }
+  .slider-pane {
+    flex: 1 1 100%;
+    min-height: auto;
+  }
+
+  /*-------------FOOTER----------------------*/
+  .social-media .row.border-top {
+    border-color: rgba(255, 255, 255, 0.1); /* soft line */
+  }
+  
+  footer .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+
+  @media (max-width: 576px) {
+
+    /*-------------WORKS----------------------*/
+    .carousel-controls {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+
+
+  /* Mobile phones */
+  @media (max-width: 600px) {
+    /*-------------BUTTON---------------------*/
+    .diagonal-btn {
+      padding: 7px 16px;
+      font-size: 12px;
+    }
+
+    /*-------------HIGHLIGHTS-----------------*/
+    #portfolio.highlight {
+      padding: 60px 0;
+      margin: 80px 0 60px 0;
+    }
+  
+    .port-container {
+      padding: 10px 20px 40px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .portfolio-image {
+      max-width: 100%;
+      margin-top: 15px;
+    }
+  
+    .featured-heading {
+      font-size: 1.8rem;
+    }
+  }
+
+
+  @media (max-width: 992px) {
+
+    /*-------------HIGHLIGHT-----------------*/
+    .port-container {
+      padding: 10px 40px 60px;
+    }
+  
+    .featured-heading {
+      font-size: 2rem;
+    }
+  }
+  
+
+}

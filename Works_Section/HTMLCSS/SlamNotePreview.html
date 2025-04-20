@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/Previews.css">
+  <title>Slam Note</title>
+</head>
+<body>
+        <div class="gallery-container">
+          <h1>Project 5: Slam Note</h1>
+          <div class="gallery-grid">
+            <img src="SLAM NOTE/1.png" alt="Note1" onclick="openLightbox(this.src)">
+            <img src="SLAM NOTE/2.png" alt="Note2" onclick="openLightbox(this.src)">
+            <img src="SLAM NOTE/3.png" alt="Note3" onclick="openLightbox(this.src)">
+            <img src="SLAM NOTE/4.png" alt="Note4" onclick="openLightbox(this.src)">
+            <img src="SLAM NOTE/5.png" alt="Note5" onclick="openLightbox(this.src)">
+            <img src="SLAM NOTE/6.png" alt="Note6" onclick="openLightbox(this.src)">
+          </div>
+          <div class="text-center">
+          <a href="HTMLCSSProjectList.html" class="diagonal-btn swipeBtn"><span>Back</span></a>
+          </div>
+        </div>
+
+
+  <!-- Lightbox viewer -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="">
+  </div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../jscript/script.js"></script>
+</body>
+</html>

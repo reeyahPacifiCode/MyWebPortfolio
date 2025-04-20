@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/Previews.css">
+  <title>ADOLESCENTS</title>
+</head>
+<body>
+        <div class="gallery-container">
+          <h1>Project 1: Adolescents</h1>
+          <div class="gallery-grid">
+            <img src="ADOLESCENTS/adol.png"   alt="adolescents1" onclick="openLightbox(this.src)">
+            <img src="ADOLESCENTS/les.png"    alt="adolescents2" onclick="openLightbox(this.src)">
+            <img src="ADOLESCENTS/ecents.png" alt="adolescents3" onclick="openLightbox(this.src)">
+          </div>
+          <div class="text-center">
+            <a href="HTMLCSSProjectList.html" class="diagonal-btn swipeBtn"><span>Back</span></a>
+          </div>
+        </div>
+
+        <!-- Lightbox viewer -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+          <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-img" src="">
+        </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../jscript/script.js"></script>
+</body>
+</html>
