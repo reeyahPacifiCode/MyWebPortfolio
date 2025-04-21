@@ -1,13 +1,20 @@
 /*MEDIA QUERIES--RESPONSIVE*/
 
 
+
 /*Projectlist*/
 @media screen and (max-width: 768px) {
     .container {
       padding: 2rem 3rem;
   }
 
-
+  @media (max-width: 480px) {
+    .diagonal-btn {
+      font-size: 12px;
+      padding: 10px 16px;
+      max-width: 90%;
+    }
+  }
   
 /*main*/
 @media (max-width: 768px) {
@@ -28,13 +35,12 @@
     }
 
 
-  /*-------------ABOUT ME---------------------*/
+    /*-------------ABOUT ME---------------------*/
     .bio-img {
       margin-top: 20px;
-  }
-
-
-  /*-------------WORKS--------------*/
+    }
+  
+  /*-------------WORKS---------------------------------------------*/
   .service-card {
     margin-bottom: 20px;
   }
@@ -57,20 +63,75 @@
   }
 }
 
-/*-------------ASSESMENTS--------------------*/
+/*-------------ASSESMENTS------------------------------------------*/
   .container {
-    padding: 10px 15px 60px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 50px;
   }
 
-  .dual-pane {
-    flex-direction: column;
-  }
   .slider-pane {
-    flex: 1 1 100%;
-    min-height: auto;
+    display: none;
+    padding: 16px 12px;
+    min-height: unset; /* Remove fixed height */
+    height: auto;       /* Let content decide */
+    box-shadow: none;
   }
 
-  /*-------------FOOTER----------------------*/
+  .slider-pane.active {
+    display: block;
+  }
+
+  .slider-nav {
+    margin-top: 20px;
+  }
+
+  .slider-pane.inactive {
+    filter: none;
+    opacity: 1;
+  }
+}
+
+.dual-pane {
+  flex-direction: row;
+    padding: 0 16px;
+    gap: 16px;
+}
+
+.slider-nav.vertical-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.1); /* optional, para visible */
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.slider-btn {
+  width: 14px;
+  height: 14px;
+}
+
+
+.glass-textbox,
+.affirmation-content {
+  padding: 12px 8px;
+  font-size: 0.95rem;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.affirmation-card {
+  font-size: 0.85rem;
+  padding: 12px;
+}
+  /*-------------FOOTER------------------------------------------------*/
   .social-media .row.border-top {
     border-color: rgba(255, 255, 255, 0.1); /* soft line */
   }
@@ -80,10 +141,12 @@
     padding-right: 1rem;
   }
   
+ 
 
+    
   @media (max-width: 576px) {
 
-    /*-------------WORKS----------------------*/
+    /*-------------WORKS-----------------------------------------------*/
     .carousel-controls {
       flex-direction: column;
       gap: 10px;
@@ -94,13 +157,13 @@
 
   /* Mobile phones */
   @media (max-width: 600px) {
-    /*-------------BUTTON---------------------*/
+    /*-------------BUTTON---------------------------------------------*/
     .diagonal-btn {
       padding: 7px 16px;
       font-size: 12px;
     }
 
-    /*-------------HIGHLIGHTS-----------------*/
+    /*-------------HIGHLIGHTS-----------------------------------------*/
     #portfolio.highlight {
       padding: 60px 0;
       margin: 80px 0 60px 0;
@@ -125,7 +188,7 @@
 
   @media (max-width: 992px) {
 
-    /*-------------HIGHLIGHT-----------------*/
+    /*-------------HIGHLIGHT------------------------------------------*/
     .port-container {
       padding: 10px 40px 60px;
     }

@@ -58,7 +58,41 @@ window.addEventListener('scroll', function() {
   });
 });
 
-//-----button script
+/* JavaScript Fix: Adjust switchFocus to toggle 'active' class */
+function switchFocus(index) {
+  const panes = document.querySelectorAll('.slider-pane');
+  const buttons = document.querySelectorAll('.slider-btn');
+
+  panes.forEach((pane, i) => {
+    if (window.innerWidth <= 768) {
+      pane.classList.remove('active');
+      if (i === index) pane.classList.add('active');
+    } else {
+      pane.classList.toggle('inactive', i !== index);
+    }
+  });
+
+  buttons.forEach((btn, i) => {
+    btn.classList.toggle('active', i === index);
+  });
+}
+
+// Responsive update on resize
+window.addEventListener('resize', () => {
+  const currentActive = document.querySelector('.slider-btn.active');
+  if (currentActive) {
+    const index = Array.from(document.querySelectorAll('.slider-btn')).indexOf(currentActive);
+    switchFocus(index);
+  }
+});
+
+// Initialize
+switchFocus(0);
+
+
+
+
+//----------------------------------------------button script-------------------------------------------------//
 document.querySelectorAll('.swipeBtn').forEach(button => {
   button.addEventListener('click', function(e) {
     e.preventDefault();
@@ -79,4 +113,5 @@ function openLightbox(src) {
 function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
 }
+
 
