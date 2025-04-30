@@ -12,20 +12,20 @@ I am a student who created this Web Portfolio as part of a school project.
 The goal of this project is to build a personal portfolio website where 
 I can showcase my completed works, skills, and information about myself as an aspiring professional.
 
-Purpose-----------------------------------------------------------------------------------------------------------------------------
+Purpose----------------------------------------------------------------------------------------------------------------------
 The main objectives of this portfolio are:
 1. To present my knowledge and skills in web development
 2. To compile and display the projects I have worked on
 3. To create an online presence that I can submit to my teacher and potentially use for future job applications
 
-Tools and Technologies Used---------------------------------------------------------------------------------------------------------
+Tools and Technologies Used--------------------------------------------------------------------------------------------------
 1. HTML
 2. CSS
 3. JavaScript 
 4. Bootstrap
 5. GitHub for version control and hosting
 
-Color theme used--------------------------------------------------------------------------------------------------------------------
+Color theme used-------------------------------------------------------------------------------------------------------------
 #2D2D2D; /*mauve*/
 #394931; /*darkgreen*/ primary-dark
 #5d624c;/*finch*/
@@ -35,7 +35,7 @@ Color theme used----------------------------------------------------------------
 #E1DBCB;/*bone*/
 #f5f5ec; /*superlight*/
 
-Features-----------------------------------------------------------------------------------------------------------------------------
+Features----------------------------------------------------------------------------------------------------------------------
 1. The homepage for my brand affirmation or tagline is located in the hero section.
 2. "About Me" section, where my CV, certification, and short essay are included.
 3. Featured section, where I highlight projects from various programming languages and frameworks.
