@@ -27,7 +27,7 @@ body {
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;                  /* Make it full-width */
-  max-width: 220px;             /* Cap it on desktop */
+  max-width: 230px;             /* Cap it on desktop */
   text-align: center;
   margin: 10px auto 0 auto;     /* Center it inside the card */
   background-color: transparent;
